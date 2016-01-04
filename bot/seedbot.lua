@@ -220,70 +220,62 @@ function create_config( )
     "invite",
     "all"
     },
-    sudo_users = {110626080,103649648,0,tonumber(our_id)},--Sudo users
+    sudo_users = {109005235,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     realm = {},--Realms Id
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v1
+    about_text = [[babali
 An advance Administration bot based on yagop/telegram-bot 
 
-https://github.com/SEEDTEAM/TeleSeed
+https://babalitelebot.vcp.ir
 
 Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@seyedan25 [Manager]
+@alimot007 {mlin manager}
+@babali007
 
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
-Our channels
-@teleseedch [English]
 ]],
     help_text = [[
 Commands list :
+راهنما:
 
 !kick [username|id]
-You can also do it by reply
+حذف از گزوه 
 
 !ban [ username|id]
-You can also do it by reply
+خذف و ممنوع ورود 
 
 !unban [id]
-You can also do it by reply
+قابل ورود کردن
 
 !who
-Members list
+لیست اعضا
 
 !modlist
-Moderators list
+لیست مدیر ها
 
 !promote [username]
-Promote someone
+مدیر کردن فردی
 
 !demote [username]
-Demote someone
+گرفتن مدیریت 
 
 !kickme
-Will kick user
+منو خذف کن
 
 !about
-Group description
+در باره گروه
 
 !setphoto
-Set and locks group photo
+انتخاب عکس گروه
 
 !setname [name]
-Set group name
+انتخاب اسم برای گروه
 
 !rules
-Group rules
+قوانین
 
 !id
-return group id or user id
+ای دی گروه
 
 !help
 
@@ -294,52 +286,53 @@ Locks [member|name|bots]
 Unlocks [member|name|photo|bots]
 
 !set rules <text>
-Set <text> as rules
+تعین قوانین
 
 !set about <text>
-Set <text> as about
+تعین در باره گروه
 
 !settings
 Returns group settings
 
 !newlink
-create/revoke your group link
+عوض کردن و ساخت لینک جدید
 
 !link
-returns group link
+دریافت لینک
 
 !owner
-returns group owner id
+مدیر اصلی
 
 !setowner [id]
-Will set id as owner
+تعین مدیر اصلی 
 
 !setflood [value]
-Set [value] as flood sensitivity
+تعین تعداد اسپم
 
 !stats
-Simple message statistics
+تعداد پیام های افراد
 
 !save [value] <text>
-Save <text> as [value]
+تعین نوشته دلخواه
 
 !get [value]
-Returns text of [value]
+نمایش نوشته دلخواه
 
 !clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
+پاک کردن مدیران"قوانین"درباره
 
 !res [username]
-returns user id
+بدست اوردن ای دی عددی
 "!res @username"
 
 !log
-will return group logs
+همه کار هایی ک اجرا شده
 
 !banlist
-will return group ban list
+لیست منع شدگان ورود به گروه
 
 **U can use both "/" and "!" 
+با استفاده از دو علامت بالا از دستورات استفاده کنید
 
 
 *Only owner and mods can add bots in group
